@@ -32,6 +32,22 @@
 }
 .col {
   flex: 1;
+  margin: 30px;
+}
+
+.flex-grid-third {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid-third .col {
+  width: 32%;
+}
+
+@media (max-width: 520px) {
+  .flex-grid {
+    display: block;
+  }
 }
 
 img {

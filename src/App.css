@@ -1,12 +1,3 @@
-.App {
-  text-align: center;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .flex-grid {
   display: flex;
 }
@@ -14,25 +5,16 @@
 .col {
   flex: 1;
   position: relative;
-
-}
-
-.flex-grid-third {
-  display: flex;
-  justify-content: space-between;
+  width: 50%;
 }
 
 img {
   width: 100%;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 100%) {
   .flex-grid {
     display: block;
-  }
-  .flex-grid-third .col {
-      margin:  auto;
-      width: 100%;
   }
 }
 

@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import bmirror from './blackmirror.jpg';
-import breakingbad from './kingdomofheaven.jpg';
-import deathnote from './graveofthefireflies.jpg';
-import got from './gameofthrones.jpg';
-import fotwd from './walkingdead.jpg';
-import thewire from './thewire2.jpg';
+
 
 import './App.css';
+import MovieCovers from './MovieCovers';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-        <div>
+        <MovieCovers />
+        {/* <div>
 
           <div class="flex-grid">
             <div class="col"><img src={bmirror} className="App-logo" alt="logo" /><div class="overlay"><div class="text">Black Mirror</div></div></div>
@@ -27,7 +24,7 @@ class App extends Component {
             <div class="col"><img src={got} className="App-logo" alt="logo" /></div>
           </div>
 
-        </div>
+        </div> */}
       </div>   
     );
   }

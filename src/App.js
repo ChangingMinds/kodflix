@@ -1,33 +1,21 @@
 import React, { Component } from 'react';
-
-
+import {Details} from './Details';
 import './App.css';
-import MovieCovers from './MovieCovers';
+import {MovieCovers} from './MovieCovers';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
+  
   render() {
     return (
-      <div className="App">
-
-        <MovieCovers />
-        {/* <div>
-
-          <div class="flex-grid">
-            <div class="col"><img src={bmirror} className="App-logo" alt="logo" /><div class="overlay"><div class="text">Black Mirror</div></div></div>
-            <div class="col"><img src={breakingbad} className="App-logo" alt="logo" /><div class="overlay"><div class="text">Kingdom of Heaven</div></div></div>
-            <div class="col"><img src={deathnote} className="App-logo" alt="logo" /><div class="overlay"><div class="text">Grave of the Fireflies</div></div></div>
-            <div class="col"><img src={fotwd} className="App-logo" alt="logo" /><div class="overlay"><div class="text">Walking Dead</div></div></div>
-            <div class="col"><img src={thewire} className="App-logo" alt="logo" /><div class="overlay"><div class="text">The Wire</div></div></div>
-          </div>
-
-          <div class="flex-grid">
-            <div class="col"><img src={got} className="App-logo" alt="logo" /></div>
-          </div>
-
-        </div> */}
-      </div>   
+      <Router>
+        <div className="App">
+          <Route path='/' component={ MovieCovers } exact />
+          <Route path='/details' component={ Details } exact />
+        </div>
+      </Router>
     );
   }
 }
-        
-export default App;
+
+ export default App;

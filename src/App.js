@@ -11,7 +11,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path='/' component={ MovieCovers } exact />
-          <Route path='/details' component={ Details } exact />
+          <Route path='/:details' component={ Details } exact />
         </div>
       </Router>
     );

@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Details = () => {
     return (
-        <div><h1>Hello, this will be the details page for each Movie and TV show :)</h1>
+        <div>
+            <h1>Hello, this will be the details page for each Movie and TV show, WIP :)</h1>
+            <Link to='/'>Back to home page</Link>
         </div>
-        <Link to='/'>Back to home page</Link>
     )
 }
 

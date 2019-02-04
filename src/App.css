@@ -1,21 +1,22 @@
-.flex-grid {
-  display: flex;
+.App {
+  text-align: centre;
+}
+
+.grid {
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .col {
-  flex: 1;
+  /*flex: 1;*/
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 img {
   width: 100%;
-}
 
-@media (max-width: 100%) {
-  .flex-grid {
-    display: block;
-  }
 }
 
 .overlay {

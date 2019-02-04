@@ -13,14 +13,12 @@ const MovieCovers = () => {
 
     return (
         <div>
-            <div className="flex-grid">
+            <div className="grid">
                 <MovieCover id='Black Mirror' title="Black Mirror" image={ bmirror }/>
                 <MovieCover id='Kingdom of heaven' title="Kingdom of Heaven" image={ breakingbad }/>
                 <MovieCover id='Grave of the Fireflies' title="Grave of the Fireflies" image={ deathnote }/>
                 <MovieCover id='Walking Dead' title="Walking Dead" image={ fotwd }/>
                 <MovieCover id='the Wire' title="The Wire" image={ thewire }/>
-            </div>
-            <div className="flex-grid">
                 <MovieCover id='Game of Thrones' title="Game of Throne" image={ got }/>
             </div>
         </div>
